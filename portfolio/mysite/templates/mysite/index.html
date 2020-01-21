@@ -1,0 +1,35 @@
+{% extends "mysite/base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+
+<body>
+
+<div class="container" style="margin-top: 100px" >
+<div id='map' style='width: 1000px; height: 300px; margin-left: 40px'>
+</div>
+</div>
+<script>
+mapboxgl.accessToken = '{{mapbox_access_token}}';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11'});
+
+
+
+</script>
+  
+</body>
+
+</html>
+
+  
+
+
+{% endblock %}
+

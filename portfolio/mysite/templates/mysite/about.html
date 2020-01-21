@@ -1,0 +1,93 @@
+{% extends "mysite/base.html" %}
+{% block content %}
+
+<header class="header">
+<style>
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    padding:0;
+    margin:0;
+}
+
+
+
+
+
+
+
+.header {
+	padding: 8.5em 0;
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.header-intro,
+.header-name {
+	text-align: center;
+}
+
+.header-intro {
+	margin-bottom: 0em;
+	color:  lightblue;
+	font-size: 2.25em;
+	text-shadow: 0px 1px 0px  lightblue;
+}
+
+.header-name {
+	margin-top: -0.2em;
+	color: lightblue;
+	font-size: 6.0em;
+	text-shadow: 0px 3px 0px lightblue;
+	font-weight: 700;
+}
+
+.about,
+.questions {
+	max-width: 37.5em;
+	margin: 0 auto;
+	margin-top: 3em;
+	line-height: 1.5em;
+}
+
+
+
+
+}</style>
+			<div>
+				<p class="header-intro">Hello, I'm</p>
+				<h1 class="header-name">NITESH</h1>
+			</div>
+		</header>
+
+		<section class="about">
+			<h2>Introduction</h2>
+			<p>This project is the part of my Django jourey.</p>
+			
+			<p>This is basically a static Django website or you can say an online portfolio showing map in
+             home using mapbox.You can alter this home page according your needs.</p>
+		</section>
+
+		<section class="questions">
+			<h2>More about project</h2>
+            <p> In this project i added a contact form when user fill the form with name email and 
+            message than his data is stored in our django sql lite database. Django 3.0 , sqllite, bootstarp is used in in this project.</p>
+			<h3>What does this project do?</h3>
+            <p> This project can be used as online portfolio having 9 bootstarp cards with github link button to showcase
+            and also have social media accounts and github link in bootstarp navbar.</p>
+
+			
+		</section>
+
+		
+
+
+
+
+
+
+{% endblock  %}
